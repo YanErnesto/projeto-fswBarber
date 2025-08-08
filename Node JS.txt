@@ -1,0 +1,108 @@
+Fundamentos do js 
+json
+http (status code, headers)
+
+O que é o nodeJS
+Ambiente que permite exec de js fora do navegador 
+processa o código da mesma forma do chrome
+
+utilizado para construir api (construir back ends servidore)
+
+utiliza o V8 mesmo motor utilizado pelo google chrome
+
+
+O node é single threaded
+
+Suporta varias op simultâneas com um único núcleo 
+
+
+Como funciona a requisição do front para o back
+
+temos 3 agente
+
+1 cozinha back
+
+
+aqui no meio tem o node
+
+
+2 mesas front
+
+
+Mesa 1 quer uma carne 
+O node vai pra cozinha fala que a mesa 1 quer carne e volta pra outras requisições 
+
+mesa 2 pede macarrão, node vai pra cozinha falar que a mesa 2 quer macarrão ao fazer isso o resultado da mesa 1 já tava pronto 
+Ele volta pra mesa 1 e entrega pra mesa 
+e assim sussetivamente 
+
+
+Para 10 pessoas a mecânica é a mesma
+Qualquer qtd 
+ele é single threading porem ele é non-blocking
+
+Hamonia com front pois também utiliza js 
+
+Para importar módulos em node utiliza se a sintaxe common
+
+
+Cada arquivo criado no node é um modulo 
+
+Por padrão ele vem com módulos responsáveis por cada coisa
+
+Modulo http faz a criação de servidores api
+
+const path = require('path');
+const meuArquivo = require ('caminho do arquivo')
+
+também é possível instalar módulos de terceiros 
+Esses módulos de terceiros estão na node modules (pasta)
+
+O package.jsom lista todos os módulos que são instalados pelo npm 
+
+npm init // cria o package
+npm install express // instala o pacote globalmente
+npm -g install nodemon // instala um pacote globalmente 
+
+
+Node mon 
+Servidor reinicia sempre que acontece uma modificação no servidor 
+
+npm install nodemon 
+
+possível instalar como dependência de desenvolviment, global e local apenas para o projeto
+
+local 
+npm install nodemon 
+
+
+desenvolvimento 
+npm install nodemon --savedev
+
+
+global 
+npm install -g nodemon 
+
+
+Modulo que só é utilizado quando está fazendo a aplicação 
+
+dependências possuem outras dependências que precisam para funcionar 
+
+
+Instalar módulos de terceiros e módulos nativos do node 
+
+terceiros vao para node modules 
+
+nativos não
+
+
+scripts
+comandos que podem ser executados
+
+
+Ao criar scripts é necessário rodar npm run antes de cada script 
+
+modulo path comunica com os arquivos 
+
+fs
+

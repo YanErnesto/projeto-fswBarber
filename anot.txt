@@ -1,0 +1,6 @@
+package.lock -> lista versões das dependencias, certifica de que as versões estão usandos as mesmas versões dos modulso 
+é possivel criar scripts em package.json
+
+em "scripts"
+Todos os scripts criados 
+antes de serem chamados é necessário dar npm run
