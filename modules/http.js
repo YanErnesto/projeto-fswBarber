@@ -25,3 +25,11 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => console.log(`Você está conectado na porta ${port}!`));
+
+
+//relação de status code
+
+
+//Existem diferentes contents types que podem ser renderizados pelo navegador
+
+

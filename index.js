@@ -1,10 +1,30 @@
-const { Person } = require("./person.js");
+const dotenv = require("dotenv");
 
-// // // require("./modules/path.js");[
+const connectToDataBase = require("./src/database/connect")
 
+dotenv.config(); //possibilita utilizar a val de ambiente
+
+//1°forma
+connectToDataBase();
+
+require("./modules/express.js")
+
+//2°forma
+// (async () => {
+//   await connectToDataBase();
+// })();
+
+// teste de importação 1
+// require("./modules/path.js");
+
+// teste de importação 2
 // require("./modules/fs.js");
 
-require("./modules/http.js");
-const person = new Person("Yanzom");
+// teste de importação 3
+// require("./modules/http.js");
 
-console.log(person.sayMyName()); // My name is Yanzom!
+// teste de importação 4
+// const person = new Person("Yanzom");
+
+// teste de importação classe
+// console.log(person.sayMyName()); // My name is Yanzom!
